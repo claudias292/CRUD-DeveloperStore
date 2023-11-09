@@ -1,0 +1,72 @@
+[
+ {
+  "id": 1,
+  "producto": "Audífonos",
+  "referencia": "Audífonos Inalambricos",
+  "precio": "$189.900 COP",
+  "imagen": "1699383310760.png"
+ },
+ {
+  "id": 2,
+  "producto": "Celular",
+  "referencia": "Smartphone Samsung",
+  "precio": "$526.000 COP",
+  "imagen": "1699383423956.png"
+ },
+ {
+  "id": 3,
+  "producto": "Computadora",
+  "referencia": "PC Samsung",
+  "precio": "$1.616.900 COP",
+  "imagen": "1699383562453.png"
+ },
+ {
+  "id": 4,
+  "producto": "Relojes",
+  "referencia": "Relojes de pulso",
+  "precio": "$118.500 COP",
+  "imagen": "1699383646382.png"
+ },
+ {
+  "id": 5,
+  "producto": "SmartWhatch",
+  "referencia": "SmartWhatch Pink",
+  "precio": "$125.000 COP",
+  "imagen": "1699383729871.png"
+ },
+ {
+  "id": 6,
+  "producto": "PC Gamer",
+  "referencia": "Set completo gamer",
+  "precio": "$1.849.900 COP",
+  "imagen": "1699383817405.png"
+ },
+ {
+  "id": 7,
+  "producto": "Airpods Bluetooth",
+  "referencia": "Auriculares Apple",
+  "precio": "$600.000 COP",
+  "imagen": "1699383919718.png"
+ },
+ {
+  "id": 8,
+  "producto": "Disco Duro Toshiba",
+  "referencia": "Disco Extraible",
+  "precio": "$184.900 COP",
+  "imagen": "1699386860618.png"
+ },
+ {
+  "id": 9,
+  "producto": "USB SanDisk",
+  "referencia": "Memoria USB",
+  "precio": "$ 35.700 COP",
+  "imagen": "1699387118236.png"
+ },
+ {
+  "id": 10,
+  "producto": "Mouse Logitech",
+  "referencia": "Mouse Inalambrico",
+  "precio": "$184.900 COP",
+  "imagen": "1699387568454.png"
+ }
+]

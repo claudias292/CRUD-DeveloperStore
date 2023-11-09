@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Store</title>
+    <link rel="stylesheet" href="/css/mainstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Developer Store</a>
+            <input type="checkbox" id="menu">           
+            <label for="menu">
+                <img src="Imagenes/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#producto">Producto</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#compras">Compras</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu"><a href="#">
+                        <img src="Imagenes/shopping_cart_FILL0_wght400_GRAD0_opsz48.png"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="header-txt">
+                <span>Bienvenido a tu tienda virtual</span>
+                <h1>Conoce nuestros productos</h1>
+                <p>Lo mejor en tecnologia y accesorios</p>
+                <div class="buttons">
+                    <a href="#" class="btn-1">Información</a>
+                    <a href="#" class="btn-1">Ver más </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-img">
+            <img src="Imagenes/img1.png" alt="">
+        </div>
+    </header>
+<h2>Todos los Productos</h2>    
+<main class="products container">
+    <div class="box-container">
+        <% productos.forEach(producto=>{ %>
+        
+        <div class="box">
+            <img src="Imagenes/<%= producto.imagen %>">
+            <div class="product-txt">
+                <h3><%= producto.producto %></h3>
+                <p><%= producto.referencia %></p>
+                <p class="precio"><%= producto.precio %></p>
+                <a href="#" class="agregar-carrito btn-3">Agregar al carrito</a>
+                <div class="acciones-producto">
+                 <a href="/edit/<%= producto.id %>" class="boton-accion"><i class='bx bx-edit bx-sm'></i></a>                 
+                 <a href="/productos/delete/<%= producto.id %>" class="boton-accion"><i class='bx bx-x bx-sm'></i></i></a>                 
+                </div>
+            </div>  
+        </div>  
+        <% }) %>
+    </div>
+</main> 
+<section>
+    <div class="enlace">        
+        <div class="link-txt">
+         <h2>
+            ¿No encuentras lo que estas buscando?
+         </h2>
+         <h3>
+            Solicita tu producto <a href="/create">AQUI</a> y lo agregamos a nuestro stock
+         </h3>
+        </div>
+    </div>
+</section>       
+</body>
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="footerNav">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Contacto</a></li>
+            <li><a href="">Catalogo</a></li>        
+        </ul>
+        </div>       
+    </div>  
+    <div class="footerBottom">
+        <p>Copyright &copy;2023 Claudia Solarte</p>
+    </div>  
+</footer>
+</html>

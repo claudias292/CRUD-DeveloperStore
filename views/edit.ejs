@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Edición</title>
+    <link rel="stylesheet" href="/css/styleforms.css">
+</head>
+<body>
+    <form action="/productos/edit/<%=editProduct.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+
+        <h2>Editar Producto</h2>
+        
+        <label for="Producto">Producto</label>
+        <input type="text" name="producto" value="<%=editProduct.producto%>">
+
+        <label for="Referencia">Descripción</label>
+        <input type="text" name="referencia" value="<%=editProduct.referencia%>" >
+
+        <label for="Marca">Precio</label>
+        <input type="text" name="precio" value="<%=editProduct.precio%>">
+
+        <label for="Marca">Imagen de producto</label>
+        <input type="file" name="imagen">
+
+        <Button type="submit" class="Modificar">MODIFICAR</Button>
+    </form>    
+</body>
+</html>
